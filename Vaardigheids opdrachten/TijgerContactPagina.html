@@ -12,17 +12,42 @@
       src="https://spreekbeurtenplein.nl/wp-content/uploads/2021/03/spreekbeurt-tijger.jpg"
       style="height: 400px; width: 800px"
     />
+    <center>
+      <h1 text-align:center>Contactformulier</h1>
+    </center>
     <div class="input">
-      <input type="text" placeholder="Username" />
+      <center>
+        <input type="text" id="user" name="user" placeholder="Username" />
+      </center>
     </div>
     <div>
-      <input type="email" placeholder="Email" />
+      <center>
+        <input type="email" placeholder="Email" />
+      </center>
     </div>
     <div>
-      <input type="password" placeholder="Wachtwoord" />
+      <center>
+        <input type="password" placeholder="Wachtwoord" />
+      </center>
     </div>
     <div>
-      <input type="gender" placeholder="Geslacht" />
+      <center>
+        <form action="/action_page.php">
+          <label for="cars">Gender?:</label>
+          <select id="cars" name="Gender">
+            <option value="volvo">Male</option>
+            <option value="saab">Female</option>
+            <option value="fiat">Non-binary</option>
+            <option value="audi">Prefer not to say</option>
+          </select>
+          <input type="submit" />
+        </form>
+      </center>
+      <div>
+        <center>
+          <input type="Button" placeholder="Wachtwoord" />
+        </center>
+      </div>
     </div>
   </body>
 </html>
