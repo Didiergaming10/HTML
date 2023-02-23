@@ -48,29 +48,34 @@ html {
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 0.9fr;
   grid-template-rows: repeat(3, 1fr);
 }
 .main--item {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .image--left,
 .image--right {
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 3;
 }
 .image--left {
   grid-column-start: 1;
   grid-column-end: 2;
 }
 .image--right {
-  grid-column: 3 / 4;
+  grid-column: 4 / 4;
 }
 .image--gallery:hover {
-  background-color: aqua;
-  transition: 500ms;
+  background-color: lightgrey;
+  transition: 600ms;
 }
-.image--gallery:hover {
-  transition: 500ms;
+.text--middle:hover {
+  background-color: lightgrey;
+  transition: 800ms;
+}
+
+.text--middle {
+  grid-column: 2;
 }
